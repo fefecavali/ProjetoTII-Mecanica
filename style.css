@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+:root {
+
+    /* cores */
+    --orange: #FD7401; 
+    --white: #FFFFFF;
+    --light-gray: #C2C2C2;
+    --gray: #555555;
+    --blue: #1E2772;
+   
+    /* dimesoes */
+    --width: 30vw;
+
+  }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr ;
+    grid-row: 1fr;
+
+    
+    font-size: 20px;
+
+}
+
+#orange {
+    color: var(--orange) ;
+}
+
+
+nav {
+    
+    position: fixed;
+    top: 0;
+    width: var(--width);
+    padding-top: 2%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--blue);
+    
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+   
+}
+
+main{    
+    height: 100%;
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+input, label {
+    width: 80%;
+    align-self: center;
+    color: var(--gray) ;
+    font-size: 16px; 
+
+}
+
+input {
+
+    background-color: var(--light-gray);
+    border: 0px;
+    border-radius: 8px;
+    height: 6vh;
+    padding: 4px;
+
+}
+
+.inputAfter {
+    position: relative;
+}
+  
+.inputAfter::after {
+    background-color: var(--orange);
+    background-repeat: no-repeat;     /*se não repete */
+    background-position: center center;
+
+    content: '';
+    display: block;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+   
+    position: absolute;
+    right: 5%;
+    top: 0px;
+  }
+  
+.inputEmail::after {
+    background-image: url(./imagens/Email.png);
+  }
+  
+.inputPassword::after {
+    background-image: url(./imagens/Password.png);
+  }
+
+label {
+    padding-top: 10px;
+    height: 3%;
+}
+
+
+#image {
+    height: 100%;
+    width: 70vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-gray);
+
+}
+
+#middle {
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+}
+
+#image img {
+    width: 362px;
+    height: 362px;
+}
+
+#forgot {
+    align-self: flex-end;
+    padding: 20px;
+    margin-right: 5%;
+    font-size: 14px;
+    color: var(--blue);
+}
+
+img {
+    width: 200px;
+    height: 59.64px;
+
+    align-self: center;
+}
+
+button {
+    background-color: var(--orange);
+    width: 80%;
+    height: 6%;
+    align-self: center;
+
+    color: var(--white);
+    border: 0px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
